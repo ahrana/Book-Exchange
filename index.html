@@ -1,0 +1,52 @@
+<head>
+  <title>Book Exchange</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Book Exchange</h1>
+    <h4>"when you complete reading a book then give it to others"</h4>
+  </header>
+  
+  <main>
+    <div class="container">
+      <h2>Available Books</h2>
+      <ul id="book-list"></ul>
+    </div>
+    
+    <div class="container">
+      <h2>Add a Book</h2>
+      <form id="add-book-form">
+        <div class="form-group">
+          <label for="book-title">Book Title</label>
+          <input type="text" class="form-control" id="book-title" required>
+        </div>
+        <div class="form-group">
+          <label for="book-author">Author</label>
+          <input type="text" class="form-control" id="book-author" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-person">Contact Person</label>
+          <input type="text" class="form-control" id="contact-person" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-number">Contact Number</label>
+          <input type="text" class="form-control" id="contact-number" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Location for Exchange</label>
+          <input type="text" class="form-control" id="location" required>
+        </div>
+        <div class="form-group">
+          <label for="book-cover">Book Cover/Photo url</label>
+          <input type="text" class="form-control" id="book-cover">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Book</button>
+      </form>
+    </div>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
