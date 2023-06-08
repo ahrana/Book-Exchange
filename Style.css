@@ -1,0 +1,98 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main styles */
+main {
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+/* Book list styles */
+#book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.book-item {
+  width: calc(33.33% - 10px);
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.book-cover {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.book-info {
+  flex: 1;
+}
+
+.book-title {
+  font-weight: bold;
+}
+
+.book-author, .book-contact-person {
+  font-style: italic;
+}
+
+.book-contact-number, .book-location {
+  color: #555;
+}
+
+/* Add book form styles */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .book-item {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .book-item {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .book-cover {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
